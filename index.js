@@ -45,11 +45,30 @@ console.log(betweenFiveAndTwenty(3)); // return false
 
 // Question 5
 
-const sumOfThreeOrFive = () => {};
+const sumOfThreeOrFive = () => {
+  let sum = 0;
+  for (let i = 1; i < 1000; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+};
+
+console.log(sumOfThreeOrFive());
 
 // Question 6
 
-const isAllLowerCase = () => {};
+const isAllLowerCase = (str) => {
+  if (str.toLowerCase() === str) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(isAllLowerCase("hello")); //returns true
+console.log(isAllLowerCase("seven eleven")); //returns true
+console.log(isAllLowerCase("Seven eleven has the best slushies")); //returns true
 
 // Question 7 *Bonus*
 
